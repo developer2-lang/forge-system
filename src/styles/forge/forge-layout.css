@@ -39,12 +39,15 @@
 }
 
 .h1 {
-  font: 700 clamp(52px, 8.4vw, 120px)/.92 var(--font-sans);
-  letter-spacing: -.035em;
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(42px, 6.5vw, 84px);
+  line-height: 0.98;
+  letter-spacing: -0.025em;
 }
 
 .h1 sup {
-  font-size: .22em;
+  font-size: .25em;
   vertical-align: super;
   letter-spacing: 0;
 }
@@ -93,19 +96,23 @@
 }
 
 .h2 {
-  font: 700 clamp(30px, 3.4vw, 46px)/1.08 var(--font-sans);
-  letter-spacing: -.028em;
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(28px, 3.2vw, 48px);
+  line-height: 1.1;
+  letter-spacing: -0.025em;
 }
 
 .h2--flat {
-  font-weight: 700;
-  font-size: clamp(26px, 2.9vw, 40px);
-  line-height: 1.2;
-  letter-spacing: -.025em;
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(24px, 2.6vw, 38px);
+  line-height: 1.15;
+  letter-spacing: -0.025em;
 }
 
 .lede {
-  font: 400 clamp(16px, 1.25vw, 18.5px)/1.62 var(--font-sans);
+  font: 400 clamp(15px, 1.15vw, 17.5px)/1.6 var(--font-sans);
   color: var(--muted);
   text-wrap: pretty;
 }

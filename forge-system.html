@@ -45,6 +45,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap" rel="stylesheet">
 
 <style>
 /* ---------- TOKENS ------------------------------------------------------- */
@@ -68,6 +69,7 @@
      tokens resolve to it automatically; Figtree is the loaded stand-in. */
   --font-sans:"Aeonik","Figtree",system-ui,-apple-system,sans-serif;
   --font-label:"Aeonik","Figtree",system-ui,sans-serif;
+  --font-display:"Clash Display","Aeonik","Figtree",system-ui,sans-serif;
   --pad:56px;
   --col:210px;
 }
@@ -231,8 +233,8 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 .gantt__ruler{display:grid;grid-template-columns:190px minmax(0,1fr);gap:24px;margin-top:6px}
 .gantt__ruler ul{display:flex;justify-content:space-between;font:500 10px var(--font-label);letter-spacing:.12em;color:rgba(244,245,247,.4)}
 .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:32px;margin-top:52px;padding-top:40px;border-top:1px solid rgba(244,245,247,.14)}
-.stats dt{font:800 clamp(38px,4.2vw,56px)/1 var(--font-sans);letter-spacing:-.03em;color:#fff}
-.stats dd{margin:12px 0 0;font:600 11px/1.4 var(--font-label);letter-spacing:.16em;text-transform:uppercase;color:rgba(244,245,247,.65)}
+.stats dt{font-family:var(--font-display);font-weight:600;font-size:clamp(38px,4.2vw,54px);line-height:1;letter-spacing:0.01em;color:#fff}
+.stats dd{margin:14px 0 0;font:500 11px/1.5 var(--font-label);letter-spacing:.18em;text-transform:uppercase;color:rgba(244,245,247,.55)}
 
 /* ---------- CLIENTS ---------------------------------------------------- */
 .clients{padding:48px var(--pad) 64px;background:var(--ink-panel);color:var(--on-dark);border-top:1px solid rgba(244,245,247,.12)}

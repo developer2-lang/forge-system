@@ -69,7 +69,7 @@ export const HeroSection: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Download the portfolio
+              Download the Portfolio
             </a>
           </div>
           <div

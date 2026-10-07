@@ -4,9 +4,10 @@
   align-items: center;
   justify-content: center;
   gap: 12px;
-  padding: 18px 32px;
+  padding: 16px 30px;
   border-radius: 999px;
-  font: 700 15.5px var(--font-sans);
+  font: 600 14.5px var(--font-sans);
+  letter-spacing: -0.01em;
   border: 1px solid transparent;
   transition: opacity .2s ease;
 }
@@ -133,7 +134,7 @@
   display: flex;
   align-items: center;
   gap: 34px;
-  font: 600 14.5px var(--font-sans);
+  font: 500 14px var(--font-sans);
 }
 
 .nav a[aria-current] {
@@ -338,7 +339,8 @@
 
 .toc__fact dd {
   margin: 7px 0 0;
-  font: 700 20px var(--font-sans);
+  font: 600 20px var(--font-display);
+  letter-spacing: -0.02em;
 }
 
 /* ---------- § 01 THE PROBLEM ------------------------------------------- */
@@ -466,7 +468,8 @@
 
 .spine__now dd {
   margin: 8px 0 0;
-  font: 700 17px var(--font-sans);
+  font: 600 16px var(--font-display);
+  letter-spacing: -0.01em;
 }
 
 .stage {
@@ -521,7 +524,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font: 700 32px var(--font-sans);
+  font: 600 32px var(--font-display);
+  letter-spacing: -0.025em;
   background: #E2DED6;
   color: #9A958B;
   transition: background .45s ease, color .45s ease;
@@ -541,8 +545,11 @@
 }
 
 .stage__name {
-  font: 700 clamp(28px, 2.9vw, 40px)/1 var(--font-sans);
-  letter-spacing: -.032em;
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(26px, 2.8vw, 38px);
+  line-height: 1.1;
+  letter-spacing: -0.025em;
 }
 
 .stage__meta {
@@ -629,8 +636,8 @@
 
 .stat b {
   display: block;
-  font: 800 40px/1 var(--font-sans);
-  letter-spacing: -.04em;
+  font: 600 40px/1 var(--font-display);
+  letter-spacing: -0.025em;
   color: var(--amber);
 }
 
@@ -886,7 +893,8 @@
 }
 
 .gantt__details-name {
-  font: 600 20px var(--font-sans);
+  font: 600 20px var(--font-display);
+  letter-spacing: -0.02em;
   color: var(--on-dark);
 }
 
@@ -1001,17 +1009,20 @@
 }
 
 .stats dt {
-  font: 800 clamp(38px, 4.2vw, 56px)/1 var(--font-sans);
-  letter-spacing: -.03em;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(38px, 4.2vw, 54px);
+  line-height: 1;
+  letter-spacing: 0.01em;
   color: #ffffff;
 }
 
 .stats dd {
-  margin: 12px 0 0;
-  font: 600 11px/1.4 var(--font-label);
-  letter-spacing: .16em;
+  margin: 14px 0 0;
+  font: 500 11px/1.5 var(--font-label);
+  letter-spacing: .18em;
   text-transform: uppercase;
-  color: rgba(244, 245, 247, .65);
+  color: rgba(244, 245, 247, .55);
 }
 
 /* ---------- CLIENTS ---------------------------------------------------- */
@@ -1112,8 +1123,8 @@
 }
 
 .case__name {
-  font: 700 22px var(--font-sans);
-  letter-spacing: -.02em;
+  font: 600 22px var(--font-display);
+  letter-spacing: -0.02em;
 }
 
 .case__stages {
@@ -1137,8 +1148,8 @@
 }
 
 .quote p {
-  font: 600 clamp(21px, 2.1vw, 29px)/1.4 var(--font-sans);
-  letter-spacing: -.015em;
+  font: 500 clamp(20px, 2vw, 28px)/1.4 var(--font-display);
+  letter-spacing: -0.015em;
   text-wrap: pretty;
 }
 
@@ -1222,8 +1233,11 @@
 }
 
 .cta h2 {
-  font: 700 clamp(34px, 4.4vw, 56px)/1.03 var(--font-sans);
-  letter-spacing: -.038em;
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(32px, 4.2vw, 52px);
+  line-height: 1.08;
+  letter-spacing: -0.025em;
 }
 
 .cta p {
@@ -1261,8 +1275,8 @@
 }
 
 .news b {
-  font: 700 24px var(--font-sans);
-  letter-spacing: -.02em;
+  font: 600 24px var(--font-display);
+  letter-spacing: -0.02em;
 }
 
 .news p {
