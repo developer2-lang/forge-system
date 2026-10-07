@@ -10,6 +10,11 @@ html {
   scroll-behavior: smooth;
 }
 
+::selection {
+  background: var(--amber);
+  color: var(--ink);
+}
+
 body {
   margin: 0;
   background: var(--paper);

@@ -14,7 +14,7 @@
   ----------------------------------------------------------------------------
   BRAND MATCH
   Type, palette and button treatments are matched to www.iuovadesign.com:
-  brand sans throughout (no mono), gold #F1A83A, near-black #0B0F13,
+  brand sans throughout (no mono), gold #F5B301, near-black #0B0F13,
   white header pills, dark pill + arrow primary CTA, two-tone headline.
   ----------------------------------------------------------------------------
   CONTENT SOURCE
@@ -55,9 +55,9 @@
   --paper:#F2F0EB;
   --paper-2:#EAE7E0;
   --white:#FFFFFF;
-  --amber:#F1A83A;
-  --amber-ink:#A9711A;
-  --amber-deep:#8A5A14;
+  --amber:#F5B301;
+  --amber-ink:#F5B301;
+  --amber-deep:#D49A00;
   --body:#3E4249;
   --muted:#5C6068;
   --muted-2:#8A8579;
@@ -129,7 +129,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 .hero{position:relative;background:var(--ink-deep);color:var(--on-dark);overflow:hidden;padding-bottom:76px}
 .hero__grid,.hero__glow{position:absolute;inset:0;pointer-events:none}
 .hero__grid{background-image:linear-gradient(rgba(244,245,247,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(244,245,247,.05) 1px,transparent 1px);background-size:72px 72px}
-.hero__glow{background:radial-gradient(1000px 560px at 82% 18%,rgba(233,161,59,.2),transparent 62%)}
+.hero__glow{background:radial-gradient(1000px 560px at 82% 18%,rgba(245,179,1,.2),transparent 62%)}
 .crumbs{position:relative;padding:22px var(--pad);display:flex;flex-wrap:wrap;gap:10px;font:500 11px var(--font-label);letter-spacing:.16em;text-transform:uppercase;color:rgba(244,245,247,.45)}
 .crumbs [aria-current]{color:var(--amber)}
 .hero__body{position:relative;padding:52px var(--pad) 0;display:grid;grid-template-columns:minmax(0,1fr) 460px;gap:64px;align-items:start}
@@ -219,7 +219,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 .gantt__label{font:600 16px var(--font-sans)}
 .gantt__label b{color:var(--amber);margin-right:10px}
 .gantt__track{position:relative;height:36px;background:rgba(244,245,247,.06)}
-.gantt__bar{position:absolute;inset-block:0;background:rgba(233,161,59,.32);border-radius:2px;display:flex;align-items:center;padding-left:10px;font:500 10px var(--font-label);white-space:nowrap;color:rgba(244,245,247,.85);transition:background .45s ease,color .45s ease}
+.gantt__bar{position:absolute;inset-block:0;background:#F5B301;border-radius:2px;display:flex;align-items:center;padding-left:10px;font:600 10px var(--font-label);white-space:nowrap;color:var(--ink-deep);transition:background .45s ease,color .45s ease}
 .gantt__row.is-done .gantt__bar{background:var(--amber);color:var(--ink-deep)}
 .gantt__bar--tight{padding-left:0;overflow:visible}
 .gantt__bar--tight span{position:absolute;left:calc(100% + 10px);color:rgba(244,245,247,.85)}
