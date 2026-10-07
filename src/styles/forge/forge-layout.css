@@ -1,0 +1,115 @@
+/* ---------- LAYOUT & SECTION GRID --------------------------------------- */
+.sec {
+  padding: 100px var(--pad);
+  border-bottom: 1px solid var(--rule);
+}
+
+.sec--dark {
+  background: var(--ink-deep);
+  color: var(--on-dark);
+  border-bottom: 0;
+}
+
+.grid-sec {
+  display: grid;
+  grid-template-columns: var(--col) minmax(0, 1fr);
+  gap: 52px;
+}
+
+.marker {
+  font: 600 11px/1.7 var(--font-label);
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--muted-2);
+}
+
+.marker--stage {
+  margin-bottom: 26px;
+}
+
+.sec--dark .marker {
+  color: rgba(244, 245, 247, .45);
+}
+
+.eyebrow {
+  font: 600 11.5px var(--font-label);
+  letter-spacing: .24em;
+  text-transform: uppercase;
+  color: var(--amber);
+}
+
+.h1 {
+  font: 700 clamp(52px, 8.4vw, 120px)/.92 var(--font-sans);
+  letter-spacing: -.035em;
+}
+
+.h1 sup {
+  font-size: .22em;
+  vertical-align: super;
+  letter-spacing: 0;
+}
+
+.hero__title {
+  margin-top: 24px;
+}
+
+.hero__title-line {
+  display: inline;
+}
+
+.hero__title-accent {
+  color: var(--amber);
+}
+
+.problem__accent {
+  color: var(--amber);
+}
+
+.stages-lede {
+  margin: 12px 0 20px;
+  max-width: 640px;
+}
+
+.turnaround-lede {
+  margin: 12px 0 42px;
+  max-width: 640px;
+}
+
+.deliverables-lede {
+  margin: 12px 0 44px;
+  max-width: 640px;
+}
+
+.faq-title {
+  margin-bottom: 36px;
+}
+
+.footer-logo-mark {
+  color: #F4F5F7;
+}
+
+.footer-desc {
+  margin-top: 20px;
+}
+
+.h2 {
+  font: 700 clamp(30px, 3.4vw, 46px)/1.08 var(--font-sans);
+  letter-spacing: -.028em;
+}
+
+.h2--flat {
+  font-weight: 700;
+  font-size: clamp(26px, 2.9vw, 40px);
+  line-height: 1.2;
+  letter-spacing: -.025em;
+}
+
+.lede {
+  font: 400 clamp(16px, 1.25vw, 18.5px)/1.62 var(--font-sans);
+  color: var(--muted);
+  text-wrap: pretty;
+}
+
+.sec--dark .lede {
+  color: rgba(244, 245, 247, .66);
+}

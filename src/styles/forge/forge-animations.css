@@ -1,0 +1,24 @@
+/* ---------- ANIMATIONS & TRANSITIONS ----------------------------------- */
+@keyframes pulse {
+  0%, 100% {
+    opacity: .4;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scrollcue span {
+    animation: none;
+  }
+  .stage,
+  .stage__key,
+  .spine__fill,
+  .spine__dot,
+  .gantt__bar,
+  .faq__q i,
+  .faq__a {
+    transition: none !important;
+  }
+}

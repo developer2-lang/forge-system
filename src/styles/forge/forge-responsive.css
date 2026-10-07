@@ -1,0 +1,120 @@
+/* ---------- RESPONSIVE ------------------------------------------------- */
+@media (max-width: 1240px) {
+  :root {
+    --pad: 36px;
+    --col: 150px;
+  }
+  .hero__body {
+    grid-template-columns: minmax(0, 1fr) 380px;
+    gap: 40px;
+  }
+  .fails,
+  .answer {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .clients__row {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 980px) {
+  .stage__cols {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .stage__cols > :last-child {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    align-items: start;
+  }
+  .stage__cols > :last-child .stat,
+  .stage__cols > :last-child .deliv {
+    margin-top: 0;
+  }
+  .deliv {
+    padding-top: 0;
+    border-top: 0;
+  }
+  .tiles--3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .sitefooter__cols {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 860px) {
+  :root {
+    --pad: 24px;
+  }
+  .nav,
+  .header__cta .btn:first-child {
+    display: none; /* swap in the site's mobile menu */
+  }
+  .hero__body,
+  .grid-sec {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .grid-sec {
+    gap: 28px;
+  }
+  .spine {
+    position: static;
+  }
+  .spine__track,
+  .spine__labels {
+    display: none; /* desktop-only chrome */
+  }
+  .sec {
+    padding: 64px var(--pad);
+  }
+  .layers,
+  .fails,
+  .answer,
+  .tiles--2,
+  .tiles--3 {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .stage__cols > :last-child {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .gate {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 10px;
+  }
+  .gantt__row,
+  .gantt__ruler {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 8px;
+  }
+  .gantt__bar--tight span {
+    left: auto;
+    right: 8px;
+  }
+  .gantt__bar--end span {
+    right: 8px;
+    left: auto;
+  }
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .clients__row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .cta,
+  .news {
+    padding: 64px var(--pad);
+  }
+  .cta__actions {
+    width: 100%;
+  }
+  .news input {
+    width: 100%;
+  }
+  .sitefooter__cols {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .js-on .stage {
+    opacity: 1; /* no scroll dimming on mobile */
+  }
+}

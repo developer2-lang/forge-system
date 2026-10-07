@@ -1,0 +1,24 @@
+/* ---------- TOKENS ------------------------------------------------------- */
+:root {
+  --ink: #101418;
+  --ink-deep: #0B0F13;
+  --ink-panel: #0E1318;
+  --paper: #F2F0EB;
+  --paper-2: #EAE7E0;
+  --white: #FFFFFF;
+  --amber: #F1A83A;
+  --amber-ink: #A9711A;
+  --amber-deep: #8A5A14;
+  --body: #3E4249;
+  --muted: #5C6068;
+  --muted-2: #8A8579;
+  --rule: #D8D4CC;
+  --rule-2: #CFCAC0;
+  --on-dark: #F4F5F7;
+  /* The live site sets Aeonik. Drop your licensed @font-face in and both
+     tokens resolve to it automatically; Figtree is the loaded stand-in. */
+  --font-sans: "Aeonik", "Figtree", system-ui, -apple-system, sans-serif;
+  --font-label: "Aeonik", "Figtree", system-ui, sans-serif;
+  --pad: 56px;
+  --col: 210px;
+}
